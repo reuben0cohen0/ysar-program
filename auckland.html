@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pages.css">
+    <title>Auckland</title>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyAG4kegQqz0piqL71CTts2o_wN-fROBWoY",
+            authDomain: "gear-list.firebaseapp.com",
+            databaseURL: "https://gear-list-default-rtdb.firebaseio.com",
+            projectId: "gear-list",
+            storageBucket: "gear-list.appspot.com",
+            messagingSenderId: "952324669388",
+            appId: "1:952324669388:web:76ab5664672fc1065b2769",
+            measurementId: "G-04CSH9GZR9"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analyt ics();
+
+        var ref = firebase.database().ref();
+        ref.on("value", function(snapshot) {
+            output.innerHTML = JSON.stringify(snapshot.val(), null, 2);
+        });
+
+    </script>
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a class="active" href="auckland.html">Auckland</a>
+        <a href="tauranga.html">Tauranga</a>
+        <a href="combined.html">Combined</a>
+    </div>
+    <div class="maintxt">
+        in
+        out
+    </div>
+</body>
+
+</html>

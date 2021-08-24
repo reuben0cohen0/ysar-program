@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    border: 1px solid grey;
+    background-color: white;
+    cursor: pointer;
+}
+ /* Orange */
+.column {
+  color: orange;
+}
+
+a, a:visited, a:active, a:link { color: inherit; text-decoration: none; } 
+
+.column:hover {
+  background: #ef742e;
+  color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+body {
+    background: #ECEFF1;
+    color: rgba(0, 0, 0, 0.87);
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#message {
+    /*width of main box*/
+    background: white;
+    max-width: 90%;
+    margin: 100px auto 16px;
+    padding: 32px 24px;
+    border-radius: 3px;
+}
+
+#message,
+/*main page selection box*/
+#message a {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+#load {
+    color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    font-size: 13px;
+}
+
+@media (max-width: 100%) {
+
+    body,
+    #message {
+        margin-top: 0;
+        background: white;
+        box-shadow: none;
+    }
+
+    body {
+        border-top: 16px solid #ffa100;
+    }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        background-color: aquamarine;
+    }
+}
