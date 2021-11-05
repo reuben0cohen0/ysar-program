@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="pages.css">
     <title>Tauranga YSAR</title>
-    <script src="tables.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -16,88 +17,276 @@
         <a href="combined.html">Combined</a>
     </div>
 
-        <table id="table" class="table">
-        <thead>
-            <tr>
-                <th></th>
-                <th data-type="number">Radio Num.</th>
-                <th>Team Name</th>
-                <th>Date/Time Out</th>
-                <th>Signed</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><img src="moveicon.png" width="10" height="10"></td>
-                <td contenteditable='true'></td>
-                <td contenteditable='true'></td>
-                <td contenteditable='true'></td>
-                <td contenteditable='true'></td>
-            </tr>
-            <tr>
-                <td><img src="moveicon.png" width="10" height="10"></td>
-                <td contenteditable='true'>2</td>
-                <td contenteditable='true'>Penelope</td>
-                <td contenteditable='true'>Mills</td>
-                <td contenteditable='true'>1978-8-11</td>
-            </tr>
-            <tr>
-                <td><img src="moveicon.png" width="10" height="10"></td>
-                <td contenteditable='true'>3</td>
-                <td contenteditable='true'>Sarah</td>
-                <td contenteditable='true'>Grant</td>
-                <td contenteditable='true'>1981-5-9</td>
-            </tr>
-            <tr>
-                <td><img src="moveicon.png" width="10" height="10"></td>
-                <td contenteditable='true'>4</td>
-                <td contenteditable='true'>Vanessa</td>
-                <td contenteditable='true'>Roberts</td>
-                <td contenteditable='true'>1980-9-27</td>
-            </tr>
-            <tr>
-                <td><img src="moveicon.png" width="10" height="10"></td>
-                <td contenteditable='true'>5</td>
-                <td contenteditable='true'>Oliver</td>
-                <td contenteditable='true'>Alsop</td>
-                <td contenteditable='true'>1986-10-30</td>
-            </tr>
-            <tr>
-                <td><img src="moveicon.png" width="10" height="10"></td>
-                <td contenteditable='true'>6</td>
-                <td contenteditable='true'>Jennifer</td>
-                <td contenteditable='true'>Forsyth</td>
-                <td contenteditable='true'>1983-3-13</td>
-            </tr>
-            <tr>
-                <td><img src="moveicon.png" width="10" height="10"></td>
-                <td contenteditable='true'>7</td>
-                <td contenteditable='true'>Michelle</td>
-                <td contenteditable='true'>King</td>
-                <td contenteditable='true'>1980-8-29</td>
-            </tr>
-            <tr>
-                <td><img src="moveicon.png" width="10" height="10"></td>
-                <td contenteditable='true'>8</td>
-                <td contenteditable='true'>Steven</td>
-                <td contenteditable='true'>Kelly</td>
-                <td contenteditable='true'>1989-8-6</td>
-            </tr>
-            <tr>
-                <td><img src="moveicon.png" width="10" height="10"></td>
-                <td contenteditable='true'>9</td>
-                <td contenteditable='true'>Julian</td>
-                <td contenteditable='true'>Ferguson</td>
-                <td contenteditable='true'>1981-9-17</td>
-            </tr>
-            <tr>
-                <td><img src="moveicon.png" width="10" height="10"></td>
-                <td contenteditable='true'>10</td>
-                <td contenteditable='true'>Chloe</td>
-                <td contenteditable='true'>Ince</td>
-                <td contenteditable='true'>1983-10-28</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="parallaxt">
+    </div>
+    <div>
+        <h1 style="position: absolute;
+    top: 30%;
+       left: 40%; color: white; font-size: 500%;">Tauranga</h1>
+    </div>
+
+    <div style="display: flex; justify-content: space-around;">
+        <div class="tables" style="">
+            Gear In
+
+            <table id="table_source" style="margin: 0;">
+                <thead>
+                    <tr>
+                        <th>Radio Number</th>
+                        <th>Team</th>
+                        <th>Date / Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="column-width: 110px"><select name="radios" id="radios">
+                                <option value="" disabled selected>Radio Num. #</option>
+                                <optgroup label="101-110">
+                                    <option value="101">TG 101</option>
+                                    <option value="102">TG 102</option>
+                                    <option value="103">TG 103</option>
+                                    <option value="104">TG 104</option>
+                                    <option value="105">TG 105</option>
+                                    <option value="106">TG 106</option>
+                                    <option value="107">TG 107</option>
+                                    <option value="108">TG 108</option>
+                                    <option value="109">TG 109</option>
+                                    <option value="110">TG 110</option>
+                                </optgroup>
+                                <optgroup label="111-120">
+                                    <option value="111">TG 111</option>
+                                    <option value="112">TG 112</option>
+                                    <option value="113">TG 113</option>
+                                    <option value="114">TG 114</option>
+                                    <option value="115">TG 115</option>
+                                    <option value="116">TG 116</option>
+                                    <option value="117">TG 117</option>
+                                    <option value="118">TG 118</option>
+                                    <option value="119">TG 119</option>
+                                    <option value="120">TG 120</option>
+                                </optgroup>
+                                <optgroup label="121-130">
+                                    <option value="121">TG 121</option>
+                                    <option value="122">TG 122</option>
+                                    <option value="123">TG 123</option>
+                                    <option value="124">TG 124</option>
+                                    <option value="125">TG 125</option>
+                                    <option value="126">TG 126</option>
+                                    <option value="127">TG 127</option>
+                                    <option value="128">TG 128</option>
+                                    <option value="129">TG 129</option>
+                                    <option value="130">TG 130</option>
+                                </optgroup>
+                            </select></td>
+                        <td><input type="text" value="Team"></td>
+                        <td><input type="datetime-local" value=""></td>
+                        <td><input type="button" class="AddNew" value="Add new row"></td>
+                        <td><img src="2560px-Arrow_east.svg.png" alt="Gear Out" class="move-row" /></td>
+                    </tr>
+                </tbody>
+
+            </table>
+            <br><br>
+            Gear Out
+            <table id="table_dest" style="margin:0;">
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <!--GPS TABLE-->
+        <div class="tables" style="">
+            GPS In
+
+            <table id="table_sourcegps">
+                <thead>
+                    <tr>
+                        <th>GPS Number</th>
+                        <th>Team</th>
+                        <th>Date / Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="column-width: 110px"><select name="radios" id="radios">
+                                <option value="" disabled selected>GPS Num. #</option>
+                                <optgroup label="01-10">
+                                    <option value="01">TG 01</option>
+                                    <option value="02">TG 02</option>
+                                    <option value="03">TG 03</option>
+                                    <option value="04">TG 04</option>
+                                    <option value="05">TG 05</option>
+                                    <option value="06">TG 06</option>
+                                    <option value="07">TG 07</option>
+                                    <option value="08">TG 08</option>
+                                    <option value="09">TG 09</option>
+                                    <option value="10">TG 10</option>
+                                </optgroup>
+                                <optgroup label="11-20">
+                                    <option value="11">TG 11</option>
+                                    <option value="12">TG 12</option>
+                                    <option value="13">TG 13</option>
+                                    <option value="14">TG 14</option>
+                                    <option value="15">TG 15</option>
+                                    <option value="16">TG 16</option>
+                                    <option value="17">TG 17</option>
+                                    <option value="18">TG 18</option>
+                                    <option value="19">TG 19</option>
+                                    <option value="20">TG 20</option>
+                                </optgroup>
+                                <optgroup label="21-32">
+                                    <option value="21">TG 21</option>
+                                    <option value="22">TG 22</option>
+                                    <option value="23">TG 23</option>
+                                    <option value="24">TG 24</option>
+                                    <option value="25">TG 25</option>
+                                    <option value="25">TG 26</option>
+                                    <option value="25">TG 27</option>
+                                    <option value="25">TG 28</option>
+                                    <option value="25">TG 29</option>
+                                    <option value="25">TG 30</option>
+                                    <option value="25">TG 31</option>
+                                    <option value="25">TG 32</option>
+                                </optgroup>
+                            </select></td>
+                        <td><input type="text" value="Team"></td>
+                        <td><input type="datetime-local" value=""></td>
+                        <td><input type="button" class="AddNew" value="Add new row"></td>
+                        <td><img src="2560px-Arrow_east.svg.png" alt="Gear Out" class="move-row" /></td>
+                    </tr>
+                </tbody>
+
+            </table>
+            <br><br>
+            GPS Out
+            <table id="table_destgps">
+                <tbody>
+                </tbody>
+            </table>
+            <br><br>
+        </div>
+    </div>
+
+    <button id="myBtn">Help</button>
+    <div id="myModal" class="modal">
+
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <ol>
+                <li>To create a new live asset, click "Add new row</li><br>
+                <li>Select the radio / GPS number from the first dropdown list. These are sorted into headings and by number order</li><br>
+                <li>Enter the team name for the user or team that is going out with the asset</li><br>
+                <li>Clicking on the claendar icon brings up a date and time picker, clicking "today" will automatically enter the current date and time.</li><br>
+                <li>Finally, the black arrow will move the asset card into the out section. To return it, just click the arrow to move it back up</li><br>
+                <li>Note: "Remove Row" will delete the row forever!</li><br>
+            </ol>
+        </div>
+
+    </div>
+
+    <div style="clear: both;"></div>
+    <footer>
+        <p>YSAR Gear Managment</p>
+        <p>Build Date 05/11/2021</p>
+        <p>Buld Version 1.0</p>
+        <div class="footlink">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="auckland.html">Auckland</a></li>
+            <li><a href="tauranga.html">Tauranga</a></li>
+            <li><a href="combined.html">Combined</a></li>
+        </div>
+    </footer>
+
+    <script>
+        //TABLE EDIT
+        $('.AddNew').click(function() {
+            var row = $(this).closest('tr').clone();
+            row.find('input').val('');
+            $(this).closest('tr').after(row);
+            $('input[type="button"]', row).removeClass('AddNew').addClass('RemoveRow').val('Remove row');
+        });
+
+        $('table').on('click', '.RemoveRow', function() {
+            $(this).closest('tr').remove();
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#table_source").on("click", "img.move-row", function() {
+                var tr = $(this).closest("tr").remove().clone();
+                tr.find("img.move-row")
+                    .attr("src", "2560px-Arrow_west.png")
+                    .attr("alt", "Gear In");
+                $("#table_dest tbody").append(tr);
+            });
+
+            $("#table_dest").on("click", " img.move-row", function() {
+                var tr = $(this).closest("tr").remove().clone();
+                tr.find("img.move-row")
+                    .attr("src", "2560px-Arrow_east.svg.png")
+                    .attr("alt", "Gear Out");
+                $("#table_source tbody").append(tr);
+            });
+        });
+        //GPS TABLE
+        $(document).ready(function() {
+            $("#table_sourcegps").on("click", "img.move-row", function() {
+                var tr = $(this).closest("tr").remove().clone();
+                tr.find("img.move-row")
+                    .attr("src", "2560px-Arrow_west.png")
+                    .attr("alt", "Gear In");
+                $("#table_destgps tbody").append(tr);
+            });
+
+            $("#table_destgps").on("click", " img.move-row", function() {
+                var tr = $(this).closest("tr").remove().clone();
+                tr.find("img.move-row")
+                    .attr("src", "2560px-Arrow_east.svg.png")
+                    .attr("alt", "Gear Out");
+                $("#table_sourcegps tbody").append(tr);
+            });
+        });
+    </script>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // button open modal
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // exit modal on click of x
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // exit modal on click outside
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        // exit modal on esc key
+        $(document).keydown(function(event) {
+            if (event.keyCode == 27) {
+                $('#myModal').hide();
+            }
+        });
+    </script>
     
+    <script>
+        window.onbeforeunload = popup;
+
+        function popup() {
+            return 'I see you are leaving the site';
+        }
+    </script>
+
 </body></html>
